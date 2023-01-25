@@ -370,7 +370,7 @@ Initiate a QuickTime Player recording of you Mac’s audio, screen, or webcam, v
 
 ![Record screen](images/about/screenrec.png)
 
-Cofigure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey/) for faster triggering.</string>
+Configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey/) for faster triggering.</string>
 	<key>uidata</key>
 	<dict>
 		<key>08E30921-59A8-47BC-AF18-467524217F53</key>
@@ -511,7 +511,7 @@ Cofigure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey/
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2022.2</string>
+	<string>2023.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/vitorgalvao/start-recording-workflow/</string>
 </dict>
