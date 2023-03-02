@@ -5,7 +5,7 @@ readonly audio_recorder='QuickTime Player'
 readonly screen_recorder='QuickTime Player'
 readonly webcam_recorder='QuickTime Player'
 
-function app_exists? {
+function app_exists {
   local -r app="${1}"
 
   if ! osascript -e "exists application \"${app}\""; then
@@ -21,7 +21,7 @@ function app_exists? {
 }
 
 if [[ "${media}" == 'audio' ]]; then
-  app_exists? "${audio_recorder}"
+  app_exists "${audio_recorder}"
 
   if [[ "${audio_recorder}" == 'QuickTime Player' ]]; then
     osascript -e 'tell application "QuickTime Player" to start (new audio recording)'
@@ -29,7 +29,7 @@ if [[ "${media}" == 'audio' ]]; then
 fi
 
 if [[ "${media}" == 'screen' ]]; then
-  app_exists? "${screen_recorder}"
+  app_exists "${screen_recorder}"
 
   if [[ "${screen_recorder}" == 'QuickTime Player' ]]; then
     osascript -e 'tell application "QuickTime Player" to start (new screen recording)'
@@ -37,7 +37,7 @@ if [[ "${media}" == 'screen' ]]; then
 fi
 
 if [[ "${media}" == 'webcam' ]]; then
-  app_exists? "${webcam_recorder}"
+  app_exists "${webcam_recorder}"
 
   if [[ "${webcam_recorder}" == 'QuickTime Player' ]]; then
     osascript -e 'tell application "QuickTime Player" to start (new movie recording)'

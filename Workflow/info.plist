@@ -58,6 +58,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>52C55DEF-AA06-49C6-9E53-D1ADD092E0F5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>08E30921-59A8-47BC-AF18-467524217F53</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>52FF8EF5-DC57-4806-9E72-862F0635977A</key>
 		<array>
 			<dict>
@@ -112,6 +125,32 @@
 				<false/>
 			</dict>
 		</array>
+		<key>A76B37EE-81EC-434C-BA90-1776B922D016</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>52FF8EF5-DC57-4806-9E72-862F0635977A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BCB87221-107B-4E67-BB23-3AD3220C7025</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>874886B0-1402-4897-92A8-2D58589E374B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C80348C5-9E6D-43F7-AC59-9E27A5BBE23D</key>
 		<array>
 			<dict>
@@ -136,67 +175,6 @@
 	<string>Start Recording</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>{var:audio_keyword}</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Record Audio</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>8E875DFB-AED9-4C57-8F5E-9194C6C0D267</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./recfunctions "${1}"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>recfunctions</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>7866452C-8929-4DFF-AC2A-F41D7B1D5CAC</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>audio</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>52FF8EF5-DC57-4806-9E72-862F0635977A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -234,18 +212,18 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>{var:screen_keyword}</string>
+				<string>{var:audio_keyword}</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Record Screen</string>
+				<string>Record Audio</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>0D5BD0D7-E241-45D9-AB58-0C545F825105</string>
+			<string>8E875DFB-AED9-4C57-8F5E-9194C6C0D267</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -253,7 +231,7 @@
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string>screen</string>
+				<string>audio</string>
 				<key>passthroughargument</key>
 				<false/>
 				<key>variables</key>
@@ -262,7 +240,28 @@
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>08E30921-59A8-47BC-AF18-467524217F53</string>
+			<string>52FF8EF5-DC57-4806-9E72-862F0635977A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>triggerid</key>
+				<string>record_audio</string>
+				<key>triggername</key>
+				<string>Record Audio</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>A76B37EE-81EC-434C-BA90-1776B922D016</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -292,6 +291,117 @@
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>41473A2E-2DDC-4783-9BE5-D64BBB7B2FFC</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>{var:screen_keyword}</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Record Screen</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>0D5BD0D7-E241-45D9-AB58-0C545F825105</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./recfunctions "${1}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>recfunctions</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7866452C-8929-4DFF-AC2A-F41D7B1D5CAC</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>screen</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>08E30921-59A8-47BC-AF18-467524217F53</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>triggerid</key>
+				<string>record_screen</string>
+				<key>triggername</key>
+				<string>Record Screen</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>52C55DEF-AA06-49C6-9E53-D1ADD092E0F5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>9AC10D36-BE8C-4217-8206-12D586582B7C</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -336,31 +446,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
 				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
 				<string></string>
-				<key>hotkey</key>
+				<key>argumenttype</key>
 				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>leftcursor</key>
+				<key>triggerid</key>
+				<string>record_webcam</string>
+				<key>triggername</key>
+				<string>Record Webcam</string>
+				<key>workflowonly</key>
 				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
+			<string>alfred.workflow.trigger.remote</string>
 			<key>uid</key>
-			<string>9AC10D36-BE8C-4217-8206-12D586582B7C</string>
+			<string>BCB87221-107B-4E67-BB23-3AD3220C7025</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -375,73 +477,124 @@ Configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey
 	<dict>
 		<key>08E30921-59A8-47BC-AF18-467524217F53</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
 			<key>xpos</key>
-			<real>230</real>
+			<real>235</real>
 			<key>ypos</key>
-			<real>320</real>
+			<real>595</real>
 		</dict>
 		<key>0D5BD0D7-E241-45D9-AB58-0C545F825105</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
 			<key>xpos</key>
 			<real>40</real>
 			<key>ypos</key>
-			<real>290</real>
+			<real>565</real>
 		</dict>
 		<key>3F0988AC-F382-497D-A294-A37F29EBDB2B</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
 			<key>xpos</key>
 			<real>40</real>
 			<key>ypos</key>
-			<real>550</real>
+			<real>955</real>
 		</dict>
 		<key>41473A2E-2DDC-4783-9BE5-D64BBB7B2FFC</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>note</key>
+			<string>Record Screen</string>
 			<key>xpos</key>
 			<real>40</real>
 			<key>ypos</key>
 			<real>420</real>
 		</dict>
+		<key>52C55DEF-AA06-49C6-9E53-D1ADD092E0F5</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>xpos</key>
+			<real>40</real>
+			<key>ypos</key>
+			<real>685</real>
+		</dict>
 		<key>52FF8EF5-DC57-4806-9E72-862F0635977A</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
 			<key>xpos</key>
-			<real>230</real>
+			<real>235</real>
 			<key>ypos</key>
-			<real>60</real>
+			<real>205</real>
 		</dict>
 		<key>7866452C-8929-4DFF-AC2A-F41D7B1D5CAC</key>
 		<dict>
 			<key>xpos</key>
-			<real>340</real>
+			<real>355</real>
 			<key>ypos</key>
-			<real>30</real>
+			<real>565</real>
 		</dict>
 		<key>874886B0-1402-4897-92A8-2D58589E374B</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
 			<key>xpos</key>
-			<real>230</real>
+			<real>235</real>
 			<key>ypos</key>
-			<real>580</real>
+			<real>985</real>
 		</dict>
 		<key>8E875DFB-AED9-4C57-8F5E-9194C6C0D267</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<real>40</real>
+			<key>ypos</key>
+			<real>175</real>
+		</dict>
+		<key>9AC10D36-BE8C-4217-8206-12D586582B7C</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>note</key>
+			<string>Record Webcam</string>
+			<key>xpos</key>
+			<real>40</real>
+			<key>ypos</key>
+			<real>810</real>
+		</dict>
+		<key>A76B37EE-81EC-434C-BA90-1776B922D016</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<real>40</real>
+			<key>ypos</key>
+			<real>295</real>
+		</dict>
+		<key>BCB87221-107B-4E67-BB23-3AD3220C7025</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<real>40</real>
+			<key>ypos</key>
+			<real>1075</real>
+		</dict>
+		<key>C80348C5-9E6D-43F7-AC59-9E27A5BBE23D</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Record Audio</string>
 			<key>xpos</key>
 			<real>40</real>
 			<key>ypos</key>
 			<real>30</real>
-		</dict>
-		<key>9AC10D36-BE8C-4217-8206-12D586582B7C</key>
-		<dict>
-			<key>xpos</key>
-			<real>40</real>
-			<key>ypos</key>
-			<real>680</real>
-		</dict>
-		<key>C80348C5-9E6D-43F7-AC59-9E27A5BBE23D</key>
-		<dict>
-			<key>xpos</key>
-			<real>40</real>
-			<key>ypos</key>
-			<real>160</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -511,7 +664,7 @@ Configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2023.1</string>
+	<string>2023.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/vitorgalvao/start-recording-workflow/</string>
 </dict>
