@@ -2,11 +2,11 @@
 
 Shortcuts to record your Mac’s audio, screen, or webcam
 
-<a href='https://alfred.app/workflows/vitor/start-recording'>⤓ Install on the Alfred Gallery</a>
+[⤓ Install on the Alfred Gallery](https://alfred.app/workflows/vitor/start-recording)
 
 ## Usage
 
-Initiate a QuickTime Player recording of you Mac’s audio, screen, or webcam, via the keywords (defaults: `audio rec`, `screen rec`, `webcam rec`).
+Initiate a QuickTime Player recording of you Mac’s audio, screen, or webcam, via the `audio rec`, `screen rec`, and `webcam rec` keywords.
 
 ![Record screen](Workflow/images/about/screenrec.png)
 
