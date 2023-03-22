@@ -468,7 +468,7 @@
 	<key>readme</key>
 	<string>## Usage
 
-Initiate a QuickTime Player recording of you Mac’s audio, screen, or webcam, via the keywords (defaults: `audio rec`, `screen rec`, `webcam rec`).
+Initiate a QuickTime Player recording of you Mac’s audio, screen, or webcam, via the `audio rec`, `screen rec`, and `webcam rec` keywords.
 
 ![Record screen](images/about/screenrec.png)
 
