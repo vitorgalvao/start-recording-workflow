@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 readonly media="${1}"
 readonly audio_recorder='QuickTime Player'
