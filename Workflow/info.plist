@@ -213,6 +213,8 @@
 				<integer>2</integer>
 				<key>keyword</key>
 				<string>{var:audio_keyword}</string>
+				<key>skipuniversalaction</key>
+				<true/>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
@@ -301,6 +303,8 @@
 				<integer>2</integer>
 				<key>keyword</key>
 				<string>{var:screen_keyword}</string>
+				<key>skipuniversalaction</key>
+				<true/>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
@@ -412,6 +416,8 @@
 				<integer>2</integer>
 				<key>keyword</key>
 				<string>{var:webcam_keyword}</string>
+				<key>skipuniversalaction</key>
+				<true/>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
