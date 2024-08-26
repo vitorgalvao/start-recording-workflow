@@ -327,13 +327,25 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./recfunctions "${1}"</string>
+				<string>on run argv
+  set media to item 1 of argv
+
+  tell application "QuickTime Player"
+    if media is "screen" then
+      start (new screen recording)
+    else if media is "audio" then
+      start (new audio recording)
+    else if media is "webcam" then
+      start (new movie recording)
+    end if
+  end tell
+end run</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>recfunctions</string>
+				<string></string>
 				<key>type</key>
-				<integer>8</integer>
+				<integer>6</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
